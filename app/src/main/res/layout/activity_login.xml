@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/loginbg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:src="@drawable/profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="@id/EmailText"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="20dp"
+            app:civ_border_color="#FFFF"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/EmailText"
+            android:layout_below="@id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:text="ENTER YOUR EMAIL ID"
+            android:layout_marginLeft="50dp" />
+        <EditText
+            android:layout_below="@id/EmailText"
+            android:layout_width="match_parent"
+            android:id="@+id/EmailEdit"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:singleLine="true"
+            android:background="@drawable/edittextstyle"
+            />
+        <TextView
+            android:id="@+id/PasswordText"
+            android:layout_below="@id/EmailEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#ffff"
+            android:text="ENTER YOUR PASSWORD"
+            android:layout_marginLeft="50dp"
+            />
+        <EditText
+            android:layout_below="@id/PasswordText"
+            android:layout_width="match_parent"
+            android:id="@+id/PasswordEdit"
+            android:layout_height="40dp"
+            android:layout_margin="30dp"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:inputType="textPassword"
+            android:background="@drawable/edittextstyle"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/signup"
+            android:layout_below="@id/PasswordEdit"
+            android:text="Signup/New User"
+            android:textSize="20sp"
+            android:textColor="#ffff"
+            android:textStyle="bold|italic"
+            android:textAlignment="center"
+            android:linksClickable="true"
+            />
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/LoginButton"
+            android:layout_below="@id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:background="@drawable/edittextstyle"
+            android:textColor="#fff"
+            android:textSize="25dp"/>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
